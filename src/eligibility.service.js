@@ -1,12 +1,26 @@
+
 const { isObject } = require('./utils');
 
+/**
+ * Represents an error that occurs when criteria are invalid.
+ * @class
+ * @extends Error
+ */
 class InvalidCriteriaError extends Error {
+  /**
+   * Creates an instance of InvalidCriteriaError.
+   * @param {string} message - The error message.
+   */
   constructor(message) {
     super(message);
     this.name = 'InvalidCriteriaError';
   }
 }
 
+/**
+ * Service for evaluating eligibility based on criteria.
+ * @class
+ */
 class EligibilityService {
   constructor() {
     /**
