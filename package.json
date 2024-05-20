@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js ./cart-test.json ./criteria-test.json",
-    "test": "mocha"
+    "test": "mocha",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^9.1.2",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "jsdoc": "^4.0.3"
   }
 }
