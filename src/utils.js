@@ -4,9 +4,9 @@
  * @return {boolean} - True if the value is an object, otherwise false.
  */
 function isObject(value) {
-    return typeof value === 'object' && value !== null;
-  }
+  return typeof value === 'object' && value !== null;
+}
   
-  module.exports = {
-    isObject,
-  };
+module.exports = {
+  isObject,
+};
